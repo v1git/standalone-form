@@ -1,0 +1,13 @@
+standalone_forms:
+    translator:
+        default_locale: en
+        resources:
+              - /var/www/wp/wp-content/vendor/symfony/form/Resources/translations/validators.en.xlf
+              - /var/www/wp/wp-content/vendor/symfony/validator/Resources/translations/validators.en.xlf
+        loaders:
+              xlf: Symfony\Component\Translation\Loader\XliffFileLoader
+    templating:
+        form_themes:
+              - Form
+        template_path_patterns:
+              - /var/www/wp/wp-content/plugins/demo/views/%name%
